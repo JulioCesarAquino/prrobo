@@ -1,0 +1,11 @@
+const axios = require('axios');
+
+const api = axios.create({
+    baseURL: 'https://prbko.pecararabrecho.com.br/api/robo/lpbc/v1',
+    timeout: 300000,
+    headers: {
+        Authorization: 'Bearer 0ef2c7f7354a1ac5dc0ebafe69ab6929',
+        'Content-Type': "application/json"
+    }
+});
+module.exports = api;
