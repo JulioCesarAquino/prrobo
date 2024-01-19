@@ -9,3 +9,6 @@ out
 # Logs
 src/log/
 src/config/logs/
+
+#api-token 
+src/function/apiConnection
