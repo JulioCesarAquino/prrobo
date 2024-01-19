@@ -234,14 +234,17 @@ module.exports = {
             AND (VENDA.DataHoraUltAlteracaoVenda >= CONVERT(DATETIME, ${dataFilter}, 102))
         GROUP BY
             CONVERT(date, VENDA.DataHoraVenda);`;
-            // await api.post(`/sync-sale/${cnpj}`, sales).then((response) => {
-            //     console.log("Resposta da API: ", response.status);
-            //     registrarLogs("src/config/Logs/sync_venda_logs", `Resposta da API: ${response.status};\n`);
-            // });
             console.log('*************************************');
-            console.log(sales);
+            if (Object.entries(sales.recordset).length > 0) {
+                console.log('Número de registros:', Object.entries(sales.recordset).length);
+                // await api.post(`/sync-sale/${cnpj}`, sales).then((response) => {
+                //     console.log("Resposta da API: ", response.status);
+                //     registrarLogs("src/config/Logs/sync_venda_logs", `Resposta da API: ${response.status};\n`);
+                // });
+            } else {
+                console.log('Não há registros de vendas para sincronização.');
+            }
             console.log('*************************************');
-
         } catch (error) {
             console.error('Erro ao sincronizar vendas:', error);
             registrarLogs("src/config/Logs/sync-vendas", `Resposta da API: ${error};\n`);

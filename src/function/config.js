@@ -106,7 +106,7 @@ module.exports = {
     */
     ultimoDiaDoMesAtual() {
         let today = new Date();
-        let lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1 ,0);
+        let lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()  + 1 ,0);
         // Formatar a data antes de retornar
         let formattedDate = date.create(lastDayOfMonth).format('Y-m-d H:M:S');
         return formattedDate;

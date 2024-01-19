@@ -79,7 +79,7 @@ setInterval(() => {
         config.alterarConfiNF();
 
     }
-    if (horas == '23:40') {
+    if (horas == '18:50') {
         // Altera a data de sincronização para o início do dia
         config.alterarConfiNF();
         nfeController.contaVendaDia();
