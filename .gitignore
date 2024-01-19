@@ -9,6 +9,7 @@ out
 # Logs
 src/log/*
 src/config/logs/*
+src/daemon
 
 #api-token 
 src/function/apiConnection.js
