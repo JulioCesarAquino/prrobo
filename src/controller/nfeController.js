@@ -25,10 +25,6 @@ module.exports = {
             const loja = cnpj.normalize().replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
 
             console.log(" ---------------- Sincronização de Vendas  ---------------- ");
-            let LastDay = ultimoDiaDoMesAtual();
-            let frts = LastDay.format("Y-m-d H:M:S");
-            console.log(frts)
-            console.log("");
             console.log("CNPJ Loja: ", cnpj);
 
             try {
