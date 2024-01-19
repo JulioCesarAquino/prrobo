@@ -11,4 +11,4 @@ src/log/
 src/config/logs/
 
 #api-token 
-src/function/apiConnection
+src/function/apiConnection.js
