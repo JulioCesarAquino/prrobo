@@ -8,12 +8,8 @@ const config = require('../function/config');
 const diretorioNFe = "src/config/NFeConfig.txt";
 
 module.exports = {
-    
-                
     async consultarVendas() {
-        let LastDay = config.primeiroDiaDoMesAtual()
-                // let frts = LastDay.format("Y-m-d");
-                console.log(LastDay)
+
         try {
 
             const conexao = NFeConfig.conexaoSQL();
@@ -25,6 +21,8 @@ module.exports = {
             const loja = cnpj.normalize().replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
 
             console.log(" ---------------- Sincronização de Vendas  ---------------- ");
+
+            console.log("");
             console.log("CNPJ Loja: ", cnpj);
 
             try {
@@ -438,4 +436,3 @@ function gerarMinutoAnterior() {
         return dataHora = dataAtual + ' ' + horas + ':' + minutoAnterios + ':' + segundos;
     }
 }
-
