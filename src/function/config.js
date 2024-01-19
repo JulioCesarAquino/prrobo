@@ -72,7 +72,7 @@ module.exports = {
         console.log("xxxxxxxxxxxxxxxx CONSOLIDAÇÂO DO DIA xxxxxxxxxxxxxxxxxxxxx");
 
         const diretorioNFe = "src/config/NFeConfig.txt";
-        let df = date.create();
+        const df = date.create();
 
         // Se horaParametro não for fornecido, use a hora atual
         let hora = horaParametro ? horaParametro : df.format('Y-m-d');
@@ -100,7 +100,7 @@ module.exports = {
         return formattedDate;
     },
     /**
-    * Retorna um objeto `node-datetime` representando o primeiro dia do mês.
+    * Retorna um objeto `node-datetime` representando o último dia do mês.
     * @returns {Object} Um objeto `node-datetime` representando o último dia do mês.
     *
     */
