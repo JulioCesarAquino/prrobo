@@ -1,0 +1,16 @@
+2024-01-16 14:19:51 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Node\node_modules\node-windows\lib\wrapper.js --file C:\Node\src\server.js --scriptoptions= --log "PR Robo wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-16 14:19:51 - Started 5804
+2024-01-16 14:22:52 - Stopping prrobo.exe
+2024-01-16 14:22:52 - ProcessKill 5804
+2024-01-16 14:22:52 - Found child process: 7144 Name: conhost.exe
+2024-01-16 14:22:52 - Found child process: 7108 Name: node.exe
+2024-01-16 14:22:52 - Stopping process 7144
+2024-01-16 14:22:52 - Send SIGINT 7144
+2024-01-16 14:22:52 - SIGINT to 7144 failed - Killing as fallback
+2024-01-16 14:22:52 - Stopping process 7108
+2024-01-16 14:22:52 - Send SIGINT 7108
+2024-01-16 14:22:52 - SIGINT to 7108 failed - Killing as fallback
+2024-01-16 14:22:52 - Stopping process 5804
+2024-01-16 14:22:52 - Send SIGINT 5804
+2024-01-16 14:22:52 - SIGINT to 5804 failed - Killing as fallback
+2024-01-16 14:22:52 - Finished prrobo.exe
