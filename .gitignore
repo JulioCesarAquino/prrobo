@@ -1,0 +1,11 @@
+# Módulos Node.js
+node_modules
+
+# Arquivos de build ou output
+dist
+build
+out
+
+# Logs
+src/log/
+src/config/logs/

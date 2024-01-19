@@ -1,0 +1,24 @@
+{
+  "name": "RoboVersaoFinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "date": "^1.0.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mssql": "^6.3.1",
+    "node-cron": "^2.0.3",
+    "node-datetime": "^2.1.2",
+    "node-windows": "^1.0.0-beta.5",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,16 @@
+# dependencies
+/node_modules
+/src/config/config.txt
+/src/config/ProdutoConfig.txt
+/src/config/FornecedorConfig.txt
+/src/config/NFeConfig.txt
+/src/config/LojaConfig.txt
+/NFe.json
+/Anotações.txt
+/daemon
+/Fornecedor.json
+/Produtos.json
+/src/controller/teste.js
+/NF_Entrada.json
+/RetornoApi_NF_Entrada.json
+/src/dadosProdutos.json
