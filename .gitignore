@@ -13,3 +13,6 @@ src/daemon
 
 #api-token 
 src/function/apiConnection.js
+
+#DateConfig
+src/config/NFeConfig.txt
