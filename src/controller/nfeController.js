@@ -237,10 +237,11 @@ module.exports = {
             console.log('*************************************');
             if (Object.entries(sales.recordset).length > 0) {
                 console.log('Número de registros:', Object.entries(sales.recordset).length);
-                // await api.post(`/sync-sale/${cnpj}`, sales).then((response) => {
-                //     console.log("Resposta da API: ", response.status);
-                //     registrarLogs("src/config/Logs/sync_venda_logs", `Resposta da API: ${response.status};\n`);
-                // });
+                await api.post(`/sync/nf/saida/sync-sale/${loja}`, sales).then((response) => {
+                    console.log("Resposta da API: ", response.status);
+                    console.log("Resposta: ", response.data);
+                    registrarLogs("src/config/Logs/sync_venda_logs", `Resposta da API: ${response.status};\n`);
+                });
             } else {
                 console.log('Não há registros de vendas para sincronização.');
             }
