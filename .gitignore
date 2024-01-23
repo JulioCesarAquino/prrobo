@@ -9,12 +9,12 @@ out
 # Logs
 src/log/*
 src/daemon
+# src/config/logs/*
 
 #api-token 
 src/function/apiConnection.js
 
 # Ignorar o arquivo NFeConfig.txt no diretório src/config/
-src/config/NFeConfig.txt
+# src/config/NFeConfig.txt
 
-# Ignorar todos os arquivos dentro de src/config/logs/
-src/config/logs/*
+
