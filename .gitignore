@@ -9,14 +9,13 @@ out
 # Logs
 src/log/*
 src/daemon
-# src/config/logs/*
 
 
 #api-token 
 src/function/apiConnection.js
 
 #config de sincronização
-# src/config/NFeConfig.txt
+src/config/NFeConfig.txt
 
 
 
