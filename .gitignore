@@ -9,8 +9,7 @@ out
 # Logs
 src/log/*
 src/daemon
-!src/config/logs/
-src/config/logs/*
+# src/config/logs/*
 
 
 #api-token 
