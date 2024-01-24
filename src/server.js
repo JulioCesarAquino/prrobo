@@ -89,7 +89,7 @@ setInterval(() => {
         nfeController.contaVendaDia(config.primeiroDiaDoMesAtual());
     }
 
-}, 30000);
+}, 25000);
 
 
 app.listen(3333);

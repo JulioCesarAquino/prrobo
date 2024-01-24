@@ -213,7 +213,7 @@ module.exports = {
             const CNPJLoja = await sql.query("SELECT CNPJEmpresa FROM EMPRESA WHERE (CdEmpresa = 1)");
             const [{ CNPJEmpresa: cnpj }] = CNPJLoja.recordset;
             const loja = cnpj.normalize().replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
-            console.log(" ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Sincronização para conferência de Vendas  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ");
+            console.log("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Sincronização para conferência de Vendas ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
             console.log("");
             console.log("CNPJ Loja: ", cnpj);
             let df = date.create();
@@ -235,11 +235,10 @@ module.exports = {
         GROUP BY
             CONVERT(date, VENDA.DataHoraVenda);`;
             if (Object.entries(sales.recordset).length > 0) {
-                console.log('Número de registros:', Object.entries(sales.recordset).length);
+                console.log('Número de registros para sincronização:', Object.entries(sales.recordset).length);
                 await api.post(`/sync/nf/saida/sync-sale/${loja}`, sales).then((response) => {
                     console.log("Resposta da API: ", response.status);
-                    console.log(" ↓↓↓↓↓↓↓↓↓ PRBKO ↓↓↓↓↓↓↓");
-                    console.log("Resposta: ", response.data);
+                    console.log("Resposta PRBko: ", response.data);
                     registrarLogs("src/config/Logs/sync_venda_logs", `Resposta da API: ${response.status};\n`);
                 });
             } else {
@@ -249,6 +248,7 @@ module.exports = {
             console.error('Erro ao sincronizar vendas:', error);
             registrarLogs("src/config/Logs/sync-vendas", `Resposta da API: ${error};\n`);
         }
+        console.log("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Sincronização para conferência de Vendas ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑")
     }
 }
 
