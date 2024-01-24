@@ -83,7 +83,6 @@ module.exports = {
                 console.log(errorNaEscrita);
             } else {
                 console.log(`Arquivo ${diretorioNFe} atualizado para ${dataHoraMinuto}!`);
-                console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
             }
         });
     },
