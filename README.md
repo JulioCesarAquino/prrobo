@@ -9,7 +9,11 @@ Pré-requisitos Antes de começar, verifique se você tem o seguinte instalado e
 
 Node.js Git (opcional, se você optar por clonar o repositório) Instalação Faça o download do projeto ou clone o repositório para o diretório de sua escolha.
 
-Clonando o repositório: bash Copy code git clone https://github.com/JulioCesarAquino/prrobo.git Ou faça o download manualmente e extraia os arquivos para o diretório de sua escolha, por exemplo, C:\Node. Navegue até o diretório onde o projeto foi baixado ou clonado.
+Clonando o repositório: 
+```bash
+git clone https://github.com/JulioCesarAquino/prrobo.git
+```
+Ou faça o download manualmente e extraia os arquivos para o diretório de sua escolha, por exemplo, C:\Node. Navegue até o diretório onde o projeto foi baixado ou clonado.
 ## Instalação
 Instale as dependências do projeto utilizando o npm:
 Configuração Dentro do diretório src/function/, localize o arquivo apiConnection.example
