@@ -11,16 +11,16 @@ Node.js Git (opcional, se você optar por clonar o repositório) Instalação Fa
 
 Clonando o repositório: bash Copy code git clone https://github.com/JulioCesarAquino/prrobo.git Ou faça o download manualmente e extraia os arquivos para o diretório de sua escolha, por exemplo, C:\Node. Navegue até o diretório onde o projeto foi baixado ou clonado.
 ## Instalação
-
-```bash
- Instale as dependências do projeto utilizando o npm:
-
-npm install
+Instale as dependências do projeto utilizando o npm:
 Configuração Dentro do diretório src/function/, localize o arquivo apiConnection.example
 
 Renomeie o arquivo apiConnection.example para apiConnection.js.
 
 Abra o arquivo apiConnection.js em um editor de texto e insira as configurações necessárias para a conexão com a API.
+```bash
+cd C:/Node
+npm install
+
 ```
     
 ## Configuração
@@ -32,7 +32,11 @@ Abra o arquivo apiConnection.js em um editor de texto e insira as configuraçõe
 ## Execução
 Após concluir a instalação e configuração, execute o comando abaixo na raiz do projeto:
 
+```bash
+cd C:/Node
 npm start
+
+```
 Aguarde alguns segundos para que o robô seja iniciado.
 
 Feche o terminal após a inicialização do robô.
